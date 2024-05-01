@@ -94,7 +94,7 @@ class MainMLKit : AppCompatActivity() {
     }
 
     private fun startCameraX() {
-        val intent = Intent(this, CameraActivity::class.java)
+        val intent = Intent(this, CameraMLKitActivity::class.java)
         launcherIntentCameraX.launch(intent)
     }
 
@@ -102,7 +102,7 @@ class MainMLKit : AppCompatActivity() {
         ActivityResultContracts.StartActivityForResult()
     ) {
         if (it.resultCode == CAMERAX_RESULT) {
-            currentImageUri = it.data?.getStringExtra(CameraActivity.EXTRA_CAMERAX_IMAGE)?.toUri()
+            currentImageUri = it.data?.getStringExtra(CameraMLKitActivity.EXTRA_CAMERAX_IMAGE)?.toUri()
             showImage()
         }
     }
@@ -151,9 +151,9 @@ class MainMLKit : AppCompatActivity() {
                 if (detectedText.isNotBlank()) {
                     binding.progressIndicator.visibility = View.GONE
 
-                    val intent = Intent(this, ResultActivity::class.java)
-                    intent.putExtra(ResultActivity.EXTRA_IMAGE_URI, uri.toString())
-                    intent.putExtra(ResultActivity.EXTRA_RESULT, detectedText)
+                    val intent = Intent(this, ResultMLKitActivity::class.java)
+                    intent.putExtra(ResultMLKitActivity.EXTRA_IMAGE_URI, uri.toString())
+                    intent.putExtra(ResultMLKitActivity.EXTRA_RESULT, detectedText)
                     startActivity(intent)
                 } else {
                     binding.progressIndicator.visibility = View.GONE

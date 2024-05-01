@@ -21,13 +21,7 @@
         android:theme="@style/Theme.Bangkit2024BPMLUA"
         tools:targetApi="31">
         <activity
-            android:name=".MLKit.ResultActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MLKit.CameraActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MLKit.MainMLKit"
+            android:name=".TensorFlowLite.Interpreter.MainInterpreter"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,18 +29,54 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".TensorFlowLite.ObjectDetection.CameraTensorFlowLite"
+            android:exported="false" />
+        <activity
+            android:name=".TensorFlowLite.ObjectDetection.MainTensorFlowLite"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TensorFlowLite.ObjectDetection.ResultTensorFlowLite"
+            android:exported="false" />
+        <activity
+            android:name=".TensorFlowLite.GooglePlayServices.CameraTensorFlowLite"
+            android:exported="false" />
+        <activity
+            android:name=".TensorFlowLite.GooglePlayServices.MainTensorFlowLite"
+            android:exported="false" />
+        <activity
+            android:name=".TensorFlowLite.GooglePlayServices.ResultTensorFlowLite"
+            android:exported="false" />
+        <activity
+            android:name=".TensorFlowLite.LMICDTFL.ResultTensorFlowLite"
+            android:exported="false" />
+        <activity
+            android:name=".TensorFlowLite.LMICDTFL.MainTensorFlowLite"
+            android:exported="false" />
+        <activity
+            android:name=".TensorFlowLite.LMICDTFL.CameraTensorFlowLite"
+            android:exported="false" />
+        <activity
+            android:name=".MLKit.ResultMLKitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MLKit.CameraMLKitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MLKit.MainMLKit"
+            android:exported="false" />
         <activity
             android:name=".KonsepDasarAndroiduntukMachineLearning.LOICDCBML.CameraActivity"
             android:exported="false" />
         <activity
             android:name=".KonsepDasarAndroiduntukMachineLearning.LOICDCBML.MainOnlineImageClassification"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".KonsepDasarAndroiduntukMachineLearning.MenggunakanKameradanGaleri.CameraX"
             android:exported="false" />
@@ -70,13 +100,7 @@
             android:exported="false" />
         <activity
             android:name=".KonsepDasarAndroiduntukMachineLearning.MenggambarObjectdiAndroid.Canvas"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>

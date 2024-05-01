@@ -15,4 +15,15 @@
 
     <string name="translate">Translate</string>
     <string name="downloading_model_fail">Model gagal diunduh</string>
+
+    <!-- TensorFlow Lite -->
+    <string name="image_classifier_failed">Image classifier failed to initialize. See error logs for details</string>
+    <string name="tflitevision_is_not_initialized_yet">TfLiteVision is not initialized yet</string>
+
+    <!-- Interpreter -->
+    <string name="rice_stock_predictor">Rice Stock Predictor</string>
+    <string name="sales_this_month">Isi penjualan bulan ini (dalam kg)</string>
+    <string name="predict">Prediksi Stok Bulan Depan</string>
+    <string name="tflite_is_not_initialized_yet">TfLite is not initialized yet</string>
+    <string name="no_tflite_interpreter_loaded">No TFLite interpreter loaded</string>
 </resources>

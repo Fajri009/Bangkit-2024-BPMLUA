@@ -5,4 +5,6 @@
     <color name="blue_500">#03a9f4</color>
     <color name="pink_200">#f48fb1</color>
     <color name="pink_500">#eb1e63</color>
+
+    <color name="bounding_box_color">#FF9800</color>
 </resources>
